@@ -1,0 +1,58 @@
+/* .life_is_on {
+    margin-top: 20px;
+} */
+
+body{
+    background: #FAFAFA;
+}
+
+h1, h5, a{
+    font-family: 'Roboto', sans-serif;
+}
+
+.info{
+    padding-top: 10px;
+    background: white;    
+}
+
+/*
+* ==========================================================
+*       MAIN FOOTER
+* ==========================================================
+*/
+footer.main-footer {
+    /* position: absolute; */
+    width: 100%;
+    bottom: 0;
+    background: #009530;
+    padding: 10px 0;
+  }
+  
+  footer.main-footer p {
+    font-size: 0.7em;
+    color: white;
+    margin: 0;
+  }
+  
+  /* MAIN FOOTER MEDIAQUERIES ------------------------- */
+  @media (max-width: 575px) {
+    footer.main-footer div[class*="col-"] {
+      text-align: center !important;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    footer.main-footer p {
+      font-size: 0.9em;
+    }
+  }
+  
+  section.charts div[class*="col-"] {
+    margin-bottom: 30px;
+  }
+  
+  section.charts header {
+    padding: 30px 0;
+  }
+
+  
