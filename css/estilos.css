@@ -15,7 +15,12 @@ h1, h5, a{
     background: white;    
 }
 
-header, #carouselExampleIndicators
+.contenedor{
+  background-color: rgba(0,0,0,0.5);
+  /* text-align: center; */
+  width: 70%;
+  padding: 30px;
+}
 
 /*
 * ==========================================================

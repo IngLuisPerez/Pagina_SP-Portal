@@ -4537,7 +4537,7 @@ tbody.collapse.show {
 }
 
 .card-img-top {
-  width: 30%;
+  width: 100%;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
@@ -6096,10 +6096,6 @@ button.bg-secondary:focus {
 
 .bg-success {
   background-color: #28a745 !important;
-}
-
-.bg-se{
-  background-color: #3DCD58 !important;
 }
 
 a.bg-success:hover, a.bg-success:focus,
