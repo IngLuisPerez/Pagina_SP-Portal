@@ -7,12 +7,16 @@
     <title>Strategic Projects - About Us</title>
 
     <link href="css/bootstrap.css" rel="stylesheet">    
-    <!-- Google fonts - Roboto -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    
     <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
      
     <link href="css/estilos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/mdb.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <style>
     .about {
@@ -42,34 +46,37 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html"><span class="oi oi-home"></span> Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html"><i class="fa fa-home grey-text" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="oi oi-briefcase"></span> Links</a>
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-briefcase grey-text" aria-hidden="true"></i> Links</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">OTTO Tool</a>
-                            <a class="dropdown-item" href="#">Graphs</a>
-                            <a class="dropdown-item" href="#">Change Report</a>
-                            <a class="dropdown-item" href="#">Idea Incubator</a>
-                            <a class="dropdown-item" href="#">Barrier Log</a>
-                            <a class="dropdown-item" href="#">Project Dashboard</a>
-                            <a class="dropdown-item" href="#">Sample Tracking</a>
-                            <a class="dropdown-item" href="#">Projects Request Database</a>
-                            <a class="dropdown-item" href="#">OTTO BaseLine</a>
-                            <a class="dropdown-item" href="#">QVE Workshop</a>
+                            <a class="dropdown-item" href="http://10.166.11.230/OTTO/otto_rep.aspx">OTTO Tool</a>
+                            <a class="dropdown-item" href="http://10.166.11.230/Charts/SelectGraphs.aspx">Graphs</a>
+                            <a class="dropdown-item" href="http://10.166.11.230/ChangeSeccion/summary.aspx">Change Report</a>
+                            <a class="dropdown-item" href="http://10.166.11.230/IdeaInc/IdeaIncubator.aspx">Idea Incubator</a>
+                            <a class="dropdown-item" href="http://10.166.11.230/Barrierlog/Barrierform.aspx">Barrier Log</a>
+                            <a class="dropdown-item" href="http://10.166.11.230/ProjectDashboard/dashboard.aspx">Project Dashboard</a>
+                            <a class="dropdown-item" href="http://10.166.11.230/sppl/construction.aspx">Sample Tracking</a>
+                            <a class="dropdown-item" href="http://10.166.11.230/ProjectRequestDB/ProjectRequest.aspx">Projects Request Database</a>
+                            <a class="dropdown-item" href="http://10.166.11.230/OTTO/baseline.aspx">OTTO BaseLine</a>
+                            <a class="dropdown-item" href="http://10.166.11.230/sppl/construction.aspx">QVE Workshop</a>
+                            <a href="http://10.166.11.230/IdeaInc/IdeaIncubator.aspx" class="dropdown-item">Knowledge Base</a>
+                            <a href="http://10.166.11.230/PRAT/user_main.aspx" class="dropdown-item">Project Review Activity Tracking</a>
+                            <a href="http://10.166.11.230/PPEP/PPEPSQE.aspx" class="dropdown-item">PPEP Dashboard</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Help <span class="oi oi-question-mark"></span></a>
                             <a class="dropdown-item" href="#">Manuals</a>
-                        </div>
+                        </div> 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html"><span class="oi oi-people"></span> About us</a>
+                        <a class="nav-link" href="about.html"> <i class="fa fa-users grey-text" aria-hidden="true"></i> About us</a>
                     </li>                
                     <li class="nav-item">
-                        <a class="nav-link" href="document.html"><span class="oi oi-folder"></span> Documents</a>
+                        <a class="nav-link" href="document.html"> <i class="fa fa-clipboard grey-text" aria-hidden="true"></i> Documents</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html"><span class="oi oi-document"></span> Contact Us</a>
+                        <a class="nav-link" href="contact.html"> <i class="fa fa-envelope grey-text" aria-hidden="true"></i> Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -84,7 +91,8 @@
                             About Us                        
                         </h1>
                         <p class="lead">Our technologies ensure that Life Is On everywhere, for everyone and at every moment. Schneider Electric.</p>
-                        <a href="#" class="btn btn-success">Show organization chart</a>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#centralModalFluid">Show organization chart</button>
+                        <!-- <a href="#" class="btn btn-success">Show organization chart</a> -->
                     </div>                  
                 </div>
             </div>
@@ -117,67 +125,169 @@
             </div>            
         </section>
 
-        <!-- <div class="container">
-            <hr>
-        <h2 style="font-family: 'Roboto', sans-serif;" class="text-center"><span class="oi oi-person"></span> Contact Us</h2>
-
-    <form>
-        <div class="form-row">
-            <div class="form-group col-md-12">
-                <label for="inputEmail4">Name</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Name">
-            </div>            
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-12">
-                <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-            </div>            
-        </div>
-        <div class="form-group">
-            <label for="inputAddress">Phone Number</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="12345678">
-        </div>
-       
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="inputCity">City</label>
-                <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="form-group col-md-4">
-                <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                </select>
-            </div>            
-        </div>
-
-        <button type="submit" class="btn btn-success">Send</button>
-    </form>
-    </div> -->
-        <!-- <div class="d-inline p-2">
-            <p><span class="oi oi-person"></span> Juan Martin Rosas. </p>
-            <p><span class="oi oi-person"></span> Julio Olivares. </p>
-            <p><span class="oi oi-person"></span> Luis Perez. </p>
-            <p><span class="oi oi-person"></span> Devany Ibarra. </p>
-            <p><span class="oi oi-person"></span> Guadalupe de la Rosa. </p>
-        </div>         -->
-    
-        <br>
-        <footer class="main-footer fixed-botton ">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <p>Schneider Electric &copy; 2017-2019</p>
-                        </div>
-                        <div class="col-sm-6 text-right">
-                            <p>Design by <span href="https://bootstrapious.com" class="external">Strategic Projects - Data Team</span></p>
-                            <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
-                        </div>
-                    </div>
+        <!-- Central Modal Small -->
+    <div class="modal fade" id="centralModalFluid" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fluid modal-notify modal-success" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <h4 class="modal-title w-100 text-white" id="myModalLabel">Show organization chart</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-        </footer>
+                <!--Body-->
+                <div class="modal-body">
+                    <img src="img/OrgChart/04022018.PNG" class="img-responsive img-fluid z-depth-1" alt="Organichart">
+                </div>
+                <!--Footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            <!--/.Content-->    
+        </div>
+    </div>
+        <br>
+        
+<!--Footer-->
+<footer class="page-footer font-small blue-grey lighten-5 pt-0">
+        <div class="bg-success" >
+            <div class="container">
+                <!--Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+    
+                    <!--Grid column-->
+                    <div class="col-12 col-md-5 text-left mb-4 mb-md-0">
+                        <h6 class="mb-0 white-text text-center text-md-left">
+                            <strong>Get connected with us on social networks!</strong>
+                        </h6>
+                    </div>
+                    <!--Grid column-->
+    
+                    <!--Grid column-->
+                    <div class="col-12 col-md-7 text-center text-md-right">
+                        <!--Facebook-->
+                        <a class="fb-ic ml-0" href="https://www.facebook.com/SchneiderElectricMX/">
+                            <i class="fa fa-facebook white-text mr-lg-4"> </i>
+                        </a>
+                        <!--Twitter-->
+                        <a class="tw-ic" href="https://twitter.com/SchneiderElec">
+                            <i class="fa fa-twitter white-text mr-lg-4"> </i>
+                        </a>
+                        <!--Google +-->
+                        <a class="gplus-ic" href="https://plus.google.com/+schneiderelectric">
+                            <i class="fa fa-google-plus white-text mr-lg-4"> </i>
+                        </a>
+                        <!--Linkedin-->
+                        <a class="li-ic" href="http://www.linkedin.com/groups/56843/profile">
+                            <i class="fa fa-linkedin white-text mr-lg-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic" href="https://www.instagram.com/schneiderelectric/?hl=es">
+                            <i class="fa fa-instagram white-text mr-lg-4"> </i>
+                        </a>
+                    </div>
+                    <!--Grid column-->
+    
+                </div>
+                <!--Grid row-->
+            </div>
+        </div>
+    
+        <!--Footer Links-->
+        <div class="container mt-5 mb-4 text-center text-md-left">
+            <div class="row mt-3">
+    
+                <!--First column-->
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4 dark-grey-text">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Schneider Electric</strong>
+                    </h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>Schneider Electric develops connected technologies and solutions to manage energy and process 
+                        in ways that are safe, reliable, efficient and sustainable. The Group invests in R&D in order to 
+                        sustain innovation and differentiation, with a strong commitment to sustainable development.</p>
+                </div>
+                <!--/.First column-->
+    
+                <!--Second column-->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 dark-grey-text">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Values</strong>
+                    </h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!" class="dark-grey-text">Leadership</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="dark-grey-text">Can DO Culture</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="dark-grey-text">Sense of Urgency</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="dark-grey-text">Continuous Improvement</a>
+                    </p>
+                </div>
+                <!--/.Second column-->
+    
+                <!--Third column-->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 dark-grey-text">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Useful links</strong>
+                    </h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!" class="dark-grey-text">Your Account</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="dark-grey-text">Become an Affiliate</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="dark-grey-text">Shipping Rates</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="dark-grey-text">Help</a>
+                    </p>
+                </div>
+                <!--/.Third column-->
+    
+                <!--Fourth column-->
+                <div class="col-md-4 col-lg-3 col-xl-3 dark-grey-text">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Contact</strong>
+                    </h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fa fa-home mr-3"></i> Apodaca, NL 317, MX</p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> <a href="mailto:Juan.Rosas@schneider-electric.com" class="dark-grey-text">Juan Martin Rosas</a> </p>
+                    <p>
+                        <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                    <p>
+                        <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+                </div>
+                <!--/.Fourth column-->
+    
+            </div>
+        </div>
+        <!--/.Footer Links-->
+    
+        <!-- Copyright-->
+        <div class="footer-copyright py-3 text-center">
+            © 2018 Copyright:
+            <a href="https://www.schneider-electric.us/en/">
+                <strong> Scheneider Electric</strong>
+            </a>
+        </div>
+        <!--/.Copyright -->
+    
+</footer>
+<!--/.Footer-->
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
