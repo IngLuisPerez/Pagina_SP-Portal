@@ -59,7 +59,14 @@
         border-radius: 10px;
         -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
         background-color: #00C851; }
-            </style>
+
+        .table-wrapper-2 {
+            display: block;
+            max-height: 300px;
+            overflow-y: auto;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+        }
+    </style>
 </head>
 <body>
     <!-- INICIO DE NAVBAR -->
@@ -147,7 +154,7 @@
             </div>
 
             <!-- Card body -->
-            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordionEx" >
+            <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordionEx" >
                 <div class="card-body">
                     
                     <div class="row">
@@ -208,6 +215,127 @@
             <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordionEx">
                 <div class="card-body">
                     <a href="#" class="btn btn-link"><i class="fa fa-file-excel-o" aria-hidden="true"></i> Directory GSC NAM.xlsx</a>                        
+                </div>
+            </div>
+        </div>
+        <!-- Accordion card -->
+
+        <!-- Accordion card -->
+        <div class="card">
+
+            <!-- Card header -->
+            <div class="card-header" role="tab" id="headingFour">
+                <a class="collapsed-four" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                    <h5 class="mb-0">
+                        Tools Manuals <i class="fa fa-angle-down rotate-icon"></i>
+                    </h5>
+                </a>
+            </div>
+
+            <!-- Card body -->
+            <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordionEx">
+                <div class="card-body">
+                        <div class="table-wrapper-2">
+                            <!--Table-->
+                            <table class="table table-hover table-responsive-md">
+
+                                <!--Table head-->
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th class="th-lg"><i class="fa fa-cogs" aria-hidden="true"></i> Tool</th>
+                                        <th class="th-lg"><i class="fa fa-check-square-o" aria-hidden="true"></i> Description</th>
+                                        <th class="th-lg"><i class="fa fa-cloud-download" aria-hidden="true"></i> Manual</th>
+                                    </tr>
+                                </thead>
+                                <!--Table head-->
+                            
+                                <!--Table body-->
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td><img src="img/Tool/icon/OTTO_Tool.jpg" alt=""> OTTO Tool</td>
+                                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quod reprehenderit, numquam commodi sint non aspernatur maxime? Voluptatum nemo aperiam odit error perspiciatis? Vitae dolores quos voluptatem inventore aliquam iure?</td>
+                                        <td><i class="fa fa-file-pdf-o" aria-hidden="true"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td><img src="img/Tool/icon/graph.jpg" alt=""> Graphs</td>
+                                        <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque ipsa adipisci, voluptatum eaque magni, fuga sapiente deserunt maxime, dolorum cumque explicabo sint veniam id tempora suscipit accusantium similique eum! Nihil.</td>
+                                        <td><i class="fa fa-file-pdf-o" aria-hidden="true"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td><img src="img/Tool/icon/change.jpg" alt=""> Change Report</td>
+                                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae dolorem praesentium consectetur perspiciatis alias voluptates atque, ex officiis cumque magni, at eligendi, dolore aliquid? Repudiandae velit commodi excepturi! Hic, odio?</td>
+                                        <td><i class="fa fa-file-pdf-o" aria-hidden="true"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td><img src="img/Tool/icon/project_request.png" alt=""> Project Request DataBase</td>
+                                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae dolorem praesentium consectetur perspiciatis alias voluptates atque, ex officiis cumque magni, at eligendi, dolore aliquid? Repudiandae velit commodi excepturi! Hic, odio?</td>
+                                        <td><i class="fa fa-file-pdf-o" aria-hidden="true"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td><img src="img/Tool/icon/ideainc.jpg" alt=""> Idea Incubator</td>
+                                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae dolorem praesentium consectetur perspiciatis alias voluptates atque, ex officiis cumque magni, at eligendi, dolore aliquid? Repudiandae velit commodi excepturi! Hic, odio?</td>
+                                        <td><i class="fa fa-file-pdf-o" aria-hidden="true"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td><img src="img/Tool/icon/barrier.jpg" alt=""> Barrier Log</td>
+                                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae dolorem praesentium consectetur perspiciatis alias voluptates atque, ex officiis cumque magni, at eligendi, dolore aliquid? Repudiandae velit commodi excepturi! Hic, odio?</td>
+                                        <td><i class="fa fa-file-pdf-o" aria-hidden="true"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td><img src="img/Tool/icon/dashboard.JPG" alt=""> Project Dashboard</td>
+                                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae dolorem praesentium consectetur perspiciatis alias voluptates atque, ex officiis cumque magni, at eligendi, dolore aliquid? Repudiandae velit commodi excepturi! Hic, odio?</td>
+                                        <td><i class="fa fa-file-pdf-o" aria-hidden="true"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">8</th>
+                                        <td><img src="img/Tool/icon/SAMPLE.png" alt=""> Sample Tracking</td>
+                                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae dolorem praesentium consectetur perspiciatis alias voluptates atque, ex officiis cumque magni, at eligendi, dolore aliquid? Repudiandae velit commodi excepturi! Hic, odio?</td>
+                                        <td><i class="fa fa-file-pdf-o" aria-hidden="true"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">9</th>
+                                        <td><img src="img/Tool/icon/baseline.png" alt=""> OTTO Baseline</td>
+                                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae dolorem praesentium consectetur perspiciatis alias voluptates atque, ex officiis cumque magni, at eligendi, dolore aliquid? Repudiandae velit commodi excepturi! Hic, odio?</td>
+                                        <td><i class="fa fa-file-pdf-o" aria-hidden="true"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">10</th>
+                                        <td><img src="img/Tool/icon/QVEWORK.png" alt=""> QVE Workshop</td>
+                                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae dolorem praesentium consectetur perspiciatis alias voluptates atque, ex officiis cumque magni, at eligendi, dolore aliquid? Repudiandae velit commodi excepturi! Hic, odio?</td>
+                                        <td><i class="fa fa-file-pdf-o" aria-hidden="true"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">11</th>
+                                        <td><img src="img/Tool/icon/KNOWLEDGE.jpg" alt=""> Knowledge Base</td>
+                                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae dolorem praesentium consectetur perspiciatis alias voluptates atque, ex officiis cumque magni, at eligendi, dolore aliquid? Repudiandae velit commodi excepturi! Hic, odio?</td>
+                                        <td><i class="fa fa-file-pdf-o" aria-hidden="true"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">12</th>
+                                        <td><img src="img/Tool/icon/PROJECT REVIEW ACTIVITY TRACKING.jpg" alt=""> PRAT</td>
+                                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae dolorem praesentium consectetur perspiciatis alias voluptates atque, ex officiis cumque magni, at eligendi, dolore aliquid? Repudiandae velit commodi excepturi! Hic, odio?</td>
+                                        <td><i class="fa fa-file-pdf-o" aria-hidden="true"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">13</th>
+                                        <td><img src="img/Tool/icon/PPEP.jpg" alt=""> PPEP Dashboard</td>
+                                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae dolorem praesentium consectetur perspiciatis alias voluptates atque, ex officiis cumque magni, at eligendi, dolore aliquid? Repudiandae velit commodi excepturi! Hic, odio?</td>
+                                        <td><i class="fa fa-file-pdf-o" aria-hidden="true"></i></td>
+                                    </tr>
+                                </tbody>
+                                <!--Table body-->
+                                
+                                </table>
+                                <!--Table-->
+                        </div>                    
                 </div>
             </div>
         </div>
