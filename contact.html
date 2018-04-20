@@ -62,6 +62,63 @@
         border-radius: 10px;
         -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
         background-color: #00C851; }
+
+        .form-header{
+            color: #fff;
+            text-align: center;
+            margin-top: -50px;
+            margin-bottom: 3rem;
+            padding: 1rem;
+            border-radius: 2px;
+        }
+
+        .btn-floating {
+            width: 47px;
+            height: 47px;
+            position: relative;
+            z-index: 1;
+            vertical-align: middle;
+            display: inline-block;
+            overflow: hidden;
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            margin: 10px;
+            border-radius: 50%;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .btn-floating:before {
+            border-radius: 0;
+        }
+        
+        a.waves-effect, a.waves-light {
+            display: inline-block;
+        }
+
+        .waves-effect {
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            z-index: 1;
+        }
+
+        .btn-floating i {
+            display: inline-block;
+            width: inherit;
+            text-align: center;
+            color: #fff;
+        }
+
+        .btn-floating i {
+        font-size: 1.25rem;
+        line-height: 47px;
+        }
     </style>
 </head>
 <body>
@@ -131,234 +188,218 @@
         </div>
     </header>
 
-    <section id="contact">
-        <div class="container">
-            <!-- <h2 class="mb-5 font-weight-bold text-center">Contact Us</h2> -->
-            <div class="row">
-                <div class="col-lg-4 col-md-12">
-                    <form action="" class="p-2">
-                        <div class="md-form form-sm">
-                            <i class="fa fa-user prefix grey-text" aria-hidden="true"></i>
-                            <input type="text" id="input1" class="form-control">
-                            <label for="input1">Your name</label>
-                        </div>
-                        <div class="md-form form-sm">
-                            <i class="fa fa-envelope prefix grey-text" aria-hidden="true"></i>
-                            <input type="text" id="input2" class="form-control">
-                            <label for="input2">Your Email</label>
-                        </div>
-                        <div class="md-form form-sm">
-                            <i class="fa fa-tag prefix grey-text" aria-hidden="true"></i>
-                            <input type="text" id="input3" class="form-control">
-                            <label for="input3">Your Subject</label>
-                        </div>
-                        <div class="md-form form-sm">
-                            <i class="fa fa-pencil prefix grey-text" aria-hidden="true"></i>
-                            <textarea type="text" id="input4" class="md-textarea" style="height: 150px;"></textarea>
-                            <label for="input4">Your Message</label>
-                        </div>
-                        <div class="text-center">
-                            <button class="btn  btn-success">Send 
-                                <i class="fa fa-send" aria-hidden="true"></i>
-                            </button>
-                        </div>                        
-                    </form>
-                </div>
-
-                
-    <!--Section: Team v.1-->
-    <div class="col-lg-8 col-md-12">
-        <section class="team-section pb-5">
-
-            <!--Section heading-->
-            <h2 class="h1 text-center py-2 animated fadeInUp">Processes and Tools Management Team</h2>
-            <!--Section description-->
-            <!-- <p class="grey-text pb-5 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi,
-                veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam.</p>
-         -->
-            <!-- Grid row -->
-            <div class="row text-center">
-        
-                <!-- Grid column -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card card-body">
-                        <div class="avatar mx-auto my-3">
-                            <img src="https://spiceportal.schneider-electric.com/image/user_male_portrait?img_id=24393766&img_id_token=1VsbJWafhvPtuB%2FCxGrIO%2FDF3DU%3D&t=1522186043948" alt="..."  class="rounded-circle img-fluid">                                                                        
-                            <!-- <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" class="rounded-circle img-fluid" alt="First sample avatar image"> -->
-                        </div>
-                        <h5 class="font-weight-bold">
-                            <strong>Juan Martin Rosas</strong>
-                        </h5>
-                        <p class="grey-text">Sr. Project Manager</p>
-        
-                        <ul class="list-unstyled">
-                            <!-- Facebook -->
-                            <a class="icons-sm fb-ic">
-                                <i class="fa fa-facebook blue-text"> </i>
-                            </a>
-                            <!-- Twitter -->
-                            <a class="icons-sm tw-ic">
-                                <i class="fa fa-twitter blue-text"> </i>
-                            </a>
-                            <!-- Instagram -->
-                            <a class="icons-sm ins-ic">
-                                <i class="fa fa-instagram blue-text"> </i>
-                            </a>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Grid column -->
-        
-                <!-- Grid column -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card card-body">
-                        <div class="avatar mx-auto my-3">
-                            <img src="https://spiceportal.schneider-electric.com/image/user_male_portrait?img_id=34880470&img_id_token=h5RyNrPUH4NtSNLtxM%2BO4rEcFjE%3D&t=1522186769115" alt="..." class="rounded-circle img-fluid">                                                                        
-                            <!-- <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle img-fluid" alt="First sample avatar image"> -->
-                        </div>
-                        <h5 class="font-weight-bold">
-                            <strong>Julio Olivares</strong>
-                        </h5>
-                        <p class="grey-text">IT Business Analyst</p>
-        
-                        <ul class="list-unstyled">
-                            <!-- Facebook -->
-                            <a class="icons-sm fb-ic">
-                                <i class="fa fa-facebook blue-text"> </i>
-                            </a>
-                            <!-- Instagram -->
-                            <a class="icons-sm ins-ic">
-                                <i class="fa fa-instagram blue-text"> </i>
-                            </a>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Grid column -->
-        
-                <!-- Grid column -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card card-body">
-                        <div class="avatar mx-auto my-3">
-                            <img src="https://spiceportal.schneider-electric.com/image/user_male_portrait?img_id=55898530&img_id_token=1u5Ys5FAn7CsddZWqCvV6TKgW5E%3D&t=1522186032757" alt="..." class="rounded-circle img-fluid">                                                                        
-                            <!-- <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="rounded-circle img-fluid" alt="First sample avatar image"> -->
-                        </div>
-                        <h5 class="font-weight-bold">
-                            <strong>Luis Angel Pérez</strong>
-                        </h5>
-                        <p class="grey-text">IT Intern</p>
-                        <br>
-                        <ul class="list-unstyled">
-                            <!-- Facebook -->
-                            <a class="icons-sm fb-ic">
-                                <i class="fa fa-facebook blue-text"> </i>
-                            </a>
-                            <!-- Instagram -->
-                            <a class="icons-sm ins-ic">
-                                <i class="fa fa-instagram blue-text"> </i>
-                            </a>
-                            <!-- Dribbble -->
-                            <a class="icons-sm ins-ic">
-                                <i class="fa fa-dribbble blue-text"> </i>
-                            </a>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Grid column -->
-        
-                <!-- Grid column -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card card-body">
-                        <div class="avatar mx-auto my-3">
-                            <img src="https://spiceportal.schneider-electric.com/image/user_male_portrait?img_id=55819843&img_id_token=vuJAn3vsBOH8bqh%2BdB6bVwq3oFw%3D&t=1522186054937" alt="..." class="rounded-circle img-fluid">                                                                        
-                            <!-- <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded-circle img-fluid" alt="First sample avatar image"> -->
-                        </div>
-                        <h5 class="font-weight-bold">
-                            <strong>Devany Ibarra</strong>
-                        </h5>
-        
-                        <p class="grey-text">IT Intern</p>
-                        <br>
-                        <ul class="list-unstyled">
-                            <!-- Facebook -->
-                            <a class="icons-sm fb-ic">
-                                <i class="fa fa-facebook blue-text"> </i>
-                            </a>
-                            <!-- Github -->
-                            <a class="icons-sm ins-ic">
-                                <i class="fa fa-github blue-text"> </i>
-                            </a>
-                        </ul>
-                    </div>
-                </div>            
-                <!-- Grid column -->
-                
-                <!-- Grid column -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card card-body">
-                        <div class="avatar mx-auto my-3">
-                            <img src="https://spiceportal.schneider-electric.com/image/user_male_portrait?img_id=55823253&img_id_token=6cKw40T8sJw5uF1Ktq8WNXhI%2FkY%3D&t=1522187072391" alt="..." class="rounded-circle img-fluid">                                                                        
-                            <!-- <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" class="rounded-circle img-fluid" alt="First sample avatar image"> -->
-                        </div>
-                        <h5 class="font-weight-bold">
-                            <strong>Guadalupe de la Rosa</strong>
-                        </h5>
-                        <p class="grey-text">Project Management Intern</p>
-                        
-                        <ul class="list-unstyled">
-                            <!-- Facebook -->
-                            <a class="icons-sm fb-ic">
-                                <i class="fa fa-facebook blue-text"> </i>
-                            </a>
-                            <!-- Twitter -->
-                            <a class="icons-sm tw-ic">
-                                <i class="fa fa-twitter blue-text"> </i>
-                            </a>
-                            <!-- Instagram -->
-                            <a class="icons-sm ins-ic">
-                                <i class="fa fa-instagram blue-text"> </i>
-                            </a>
-                        </ul>
-                    </div>
-                </div>
-                    <!-- Grid column -->
+    <section>            
+        <div class="container-team">
+            <div class="at-section">
+                <div class="at-section__title">Processes and Tools Management Team</div>
             </div>
-            <!-- Grid row -->
-        
-        </section>
-        <!--Section: Team v.1-->
-    </div>            
-                
-                <!-- <div class="col-lg-6 col-md-12">
-                    <h3 class="text-center">Processes and Tools Management Team</h3>
-                    <div class="col-lg-12">
-                        <img src="https://spiceportal.schneider-electric.com/image/user_male_portrait?img_id=24393766&img_id_token=1VsbJWafhvPtuB%2FCxGrIO%2FDF3DU%3D&t=1522186043948" alt="..." width="50" height="50" class="rounded-circle">                                                                        
-                        Juan Martin Rosas - Sr. Project Manager - SESA216674
+            <div class="at-grid" data-column="3">
+                <div class="at-column">
+                    <div class="at-user">
+                        <div class="at-user__avatar"><img src="https://spiceportal.schneider-electric.com/image/user_male_portrait?img_id=24393766&img_id_token=1VsbJWafhvPtuB%2FCxGrIO%2FDF3DU%3D&t=1522186043948"/></div>
+                        <div class="at-user__name">Juan Martin Rosas</div>
+                        <div class="at-user__title">Sr. Project Manager</div>
+                        <ul class="at-social">
+                        <li class="at-social__item"><a href="">
+                            <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                            </svg></a></li>
+                        <li class="at-social__item"><a href="">
+                            <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                            </svg></a></li>
+                        <li class="at-social__item"><a href="">
+                            <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                            </svg></a></li>
+                        </ul>
                     </div>
-                    <hr>
-                    <div class="col-lg-12">
-                        <img src="https://spiceportal.schneider-electric.com/image/user_male_portrait?img_id=34880470&img_id_token=h5RyNrPUH4NtSNLtxM%2BO4rEcFjE%3D&t=1522186769115" alt="..." width="50" height="50" class="rounded-circle">                                                                        
-                        Julio Olivares - IT Business Analyst - SESA407180
+                </div>
+                <div class="at-column">
+                    <div class="at-user">
+                        <div class="at-user__avatar"><img src="https://spiceportal.schneider-electric.com/image/user_male_portrait?img_id=34880470&img_id_token=h5RyNrPUH4NtSNLtxM%2BO4rEcFjE%3D&t=1522186769115"/></div>
+                        <div class="at-user__name">Julio Olivares</div>
+                        <div class="at-user__title">IT Business Analyst</div>
+                        <ul class="at-social">
+                        <li class="at-social__item"><a href="">
+                            <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                            </svg></a></li>
+                        <li class="at-social__item"><a href="">
+                            <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                            </svg></a></li>
+                        <li class="at-social__item"><a href="">
+                            <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                            </svg></a></li>
+                        </ul>
                     </div>
-                    <hr>
-                    <div class="col-lg-12">
-                        <img src="https://spiceportal.schneider-electric.com/image/user_male_portrait?img_id=55898530&img_id_token=1u5Ys5FAn7CsddZWqCvV6TKgW5E%3D&t=1522186032757" alt="..." width="50" height="50" class="rounded-circle">                                                                        
-                        Luis Perez - IT Intern - SESA456812
+                </div>
+                <div class="at-column">
+                    <div class="at-user">
+                        <div class="at-user__avatar"><img src="https://spiceportal.schneider-electric.com/image/user_male_portrait?img_id=55898530&img_id_token=1u5Ys5FAn7CsddZWqCvV6TKgW5E%3D&t=1522186032757"/></div>
+                        <div class="at-user__name">Luis Angel Pérez</div>
+                        <div class="at-user__title">IT Intern</div>
+                        <ul class="at-social">
+                        <li class="at-social__item"><a href="">
+                            <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                            </svg></a></li>
+                        <li class="at-social__item"><a href="">
+                            <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                            </svg></a></li>
+                        <li class="at-social__item"><a href="">
+                            <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                            </svg></a></li>
+                        </ul>
                     </div>
-                    <hr>
-                    <div class="col-lg-12">
-                        <img src="https://spiceportal.schneider-electric.com/image/user_male_portrait?img_id=55819843&img_id_token=vuJAn3vsBOH8bqh%2BdB6bVwq3oFw%3D&t=1522186054937" alt="..." width="50" height="50" class="rounded-circle">                                                                        
-                        Devany Ibarra - IT Intern - SESA483615
+                </div>
+                <div class="at-column">
+                    <div class="at-user">
+                        <div class="at-user__avatar"><img src="https://spiceportal.schneider-electric.com/image/user_male_portrait?img_id=55819843&img_id_token=vuJAn3vsBOH8bqh%2BdB6bVwq3oFw%3D&t=1522186054937"/></div>
+                        <div class="at-user__name">Devany Ibarra</div>
+                        <div class="at-user__title">IT Intern</div>
+                        <ul class="at-social">
+                        <li class="at-social__item"><a href="">
+                            <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                            </svg></a></li>
+                        <li class="at-social__item"><a href="">
+                            <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                            </svg></a></li>
+                        <li class="at-social__item"><a href="">
+                            <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                            </svg></a></li>
+                        </ul>
                     </div>
-                    <hr>
-                    <div class="col-lg-12">
-                        <img src="https://spiceportal.schneider-electric.com/image/user_male_portrait?img_id=55823253&img_id_token=6cKw40T8sJw5uF1Ktq8WNXhI%2FkY%3D&t=1522187072391" alt="..." width="50" height="50" class="rounded-circle">                                                                        
-                        Guadalupe de la Rosa - Project Mgmt Intern - SESA469658
-                    </div>                                                              
-                </div> -->                
-            </div>  
-                     
-        </div>          
+                </div>
+                <div class="at-column">
+                    <div class="at-user">
+                        <div class="at-user__avatar"><img src="https://spiceportal.schneider-electric.com/image/user_male_portrait?img_id=55823253&img_id_token=6cKw40T8sJw5uF1Ktq8WNXhI%2FkY%3D&t=1522187072391"/></div>
+                        <div class="at-user__name">Guadalupe de la Rosa</div>
+                        <div class="at-user__title">Project Management Intern</div>
+                        <ul class="at-social">
+                        <li class="at-social__item"><a href="">
+                            <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                            </svg></a></li>
+                        <li class="at-social__item"><a href="">
+                            <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                            </svg></a></li>
+                        <li class="at-social__item"><a href="">
+                            <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                            </svg></a></li>
+                        </ul>
+                    </div>
+                </div>                                    
+            </div>
+        </div>        
     </section>
+<!--Section: Contact v.1-->
+
+<section>
+    <div class="container">
+        <div class="row">
+
+                <!--Grid column-->
+                <div class="col-lg-5 mb-4">
+        
+                    <!--Form with header-->
+                    <div class="card">
+        
+                        <div class="card-body">
+                            <!--Header-->
+                            <div class="form-header success-color">
+                                <h3>
+                                    <i class="fa fa-envelope"></i> Write to us:</h3>
+                            </div>                                                                
+        
+                            <!--Body-->
+                            <div class="md-form">
+                                <i class="fa fa-user prefix grey-text"></i>
+                                <input type="text" id="form-name" class="form-control">
+                                <label for="form-name">Your name</label>
+                            </div>
+        
+                            <div class="md-form">
+                                <i class="fa fa-envelope prefix grey-text"></i>
+                                <input type="text" id="form-email" class="form-control">
+                                <label for="form-email">Your email</label>
+                            </div>
+        
+                            <div class="md-form">
+                                <i class="fa fa-tag prefix grey-text"></i>
+                                <input type="text" id="form-Subject" class="form-control">
+                                <label for="form-Subject">Subject</label>
+                            </div>
+        
+                            <div class="md-form">
+                                <i class="fa fa-pencil prefix grey-text"></i>
+                                <textarea type="text" id="form-text" class="form-control md-textarea" rows="3"></textarea>
+                                <label for="form-text">Icon Prefix</label>
+                            </div>
+        
+                            <div class="text-center">
+                                <button class="btn btn-success">Submit</button>
+                            </div>
+        
+                        </div>
+        
+                    </div>
+                    <!--Form with header-->
+        
+                </div>
+                <!--Grid column-->
+        
+                <!--Grid column-->
+                <div class="col-lg-7">
+        
+                    <!--Google map-->
+                    <div id="map-container" class="rounded z-depth-1-half map-container" style="height: 400px"></div>
+        
+                    <br>
+                    <!--Buttons-->
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <a class="btn-floating success-color waves-effect waves-light z-depth-1-half">
+                                <i class="fa fa-map-marker"></i>
+                            </a>
+                            <p>San Francisco, CA 94126</p>
+                            <p>United States</p>
+                        </div>
+        
+                        <div class="col-md-4">
+                            <a class="btn-floating success-color waves-effect waves-light z-depth-1-half">
+                                <i class="fa fa-phone"></i>
+                            </a>
+                            <p>+ 01 234 567 89</p>
+                            <p>Mon - Fri, 8:00-22:00</p>
+                        </div>
+        
+                        <div class="col-md-4">
+                            <a class="btn-floating success-color waves-effect waves-light z-depth-1-half">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                            <p>info@gmail.com</p>
+                            <p>sale@gmail.com</p>
+                        </div>
+                    </div>
+        
+                </div>
+                <!--Grid column-->
+        
+            </div>
+    </div>        
+
+</section>
+<!--Section: Contact v.1-->
 
     <!--Footer-->
 <footer class="page-footer font-small blue-grey lighten-5 pt-0">
